@@ -1,0 +1,52 @@
+unit Unit1;
+
+interface
+  type
+    TAnimal = class
+    public
+      procedure Talk;
+      {虚拟方法}
+      function Run:Integer;virtual;
+      {类方法}
+      class procedure Eat();
+      {构造方法}
+      constructor Create;
+    end;
+
+    TDog = class(TAnimal)
+    public
+      function Run:Integer;
+    end;
+implementation
+
+{ TPerson }
+
+constructor TAnimal.Create;
+begin
+  Writeln('构造方法执行了');
+end;
+
+class procedure TAnimal.Eat;
+begin
+  Writeln('Eat');
+end;
+
+function TAnimal.Run: Integer;
+begin
+{一般情况下，父类的虚拟方法会有一个空实现}
+end;
+
+procedure TAnimal.Talk;
+begin
+  Writeln('Talk');
+end;
+
+
+{ TDog }
+
+function TDog.Run: Integer;
+begin
+  Writeln('dog run');
+end;
+
+end.

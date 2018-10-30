@@ -1,0 +1,86 @@
+unit Unit1;
+
+interface
+
+uses
+  DaoUnit, AddForm, System.Generics.Collections, Unit2, Winapi.Windows, Winapi.Messages,
+  System.SysUtils, System.Variants, System.Classes, Vcl.Graphics, Vcl.Controls,
+  Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TForm1 = class(TForm)
+    mmo1: TMemo;
+    btnAdd: TBitBtn;
+    btnDelte: TBitBtn;
+    btnModify: TBitBtn;
+    btnFind: TBitBtn;
+    btnClear: TBitBtn;
+    edt1: TEdit;
+    procedure FormCreate(Sender: TObject);
+    procedure btnFindClick(Sender: TObject);
+    procedure btnAddClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+//  StudentList: TList<TStudent>;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnAddClick(Sender: TObject);
+var
+  AddForm: TfrmAdd;
+begin
+//  if edt1.Text = '' then
+//  begin
+//    MessageBox(Handle, '编辑框内容为空，请输入内容！', '温馨提示', MB_OK);
+//    Exit;
+//  end;
+//  StudentList.Add(TStudent.Create(edt1.Text));
+//  MessageBox(Handle, '添加成功！', '温馨提示', MB_OK);
+
+//  frmAdd.Create(Self).ShowModal;
+
+  AddForm := TfrmAdd.Create(Self);
+  AddForm.Left := Self.Left + 50;
+  AddForm.Top := Self.Top + 15;
+  AddForm.ShowModal;
+end;
+
+procedure TForm1.btnFindClick(Sender: TObject);
+var
+  StuDictionary: TDictionary<string, TStudent>;
+  Stu: TStudent;
+begin
+//  mmo1.Clear;
+//  for Stu in StudentList do
+//  begin
+//    mmo1.Lines.Add(Stu.Name);
+//  end;
+  StuDictionary := TDao.ListStu;
+  for Stu in StuDictionary.Values do
+  begin
+    mmo1.Lines.Add(Stu.Id + '||' + Stu.name + '||' + Stu.Age.ToString);
+  end;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+//  StudentList := TList<TStudent>.Create;
+//  StudentList.Add(TStudent.Create('小强'));
+//  StudentList.Add(TStudent.Create('萧蔷'));
+//  StudentList.Add(TStudent.Create('小黑'));
+//  StudentList.Add(TStudent.Create('小白'));
+//  StudentList.Add(TStudent.Create('小黄'));
+
+//  StudentDictionary := TDictionary<Integer, TStudent>.Create;
+end;
+
+end.
+

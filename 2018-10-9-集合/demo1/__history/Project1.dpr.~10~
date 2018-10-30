@@ -1,0 +1,30 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+{最标准的集合定义方式}
+
+type
+  TMySet = set of Char;
+
+  TMySet1 = set of'a'..'z';
+
+  Int = Integer;
+
+var
+  {相当于简写}
+  TMySet2: set of 1..2;
+  MSet: TMySet;
+{type:主要作用是让用户(程序员)可以自定义类型}
+  index: Int;
+
+begin
+  indexs := 100;
+  Writeln();
+  Readln;
+end.
+

@@ -1,0 +1,55 @@
+unit uExtends;
+
+interface
+type
+  {定义一个类}
+  TAnimal = class
+  private
+    FWeight: Integer;
+  public
+    {定义一个构造方法}
+    constructor Create(FWeight:Integer);
+  end;
+  {定义一个派生类}
+
+  TDog = class(TAnimal)
+
+  public
+    {定义一个构造方法}
+    constructor Create;
+  end;
+
+  {定义一个派生类}
+  TCat = class(TAnimal)
+  public
+    constructor Create;
+  end;
+
+implementation
+
+
+
+{ TAnimal }
+
+constructor TAnimal.Create(FWeight: Integer);
+begin
+  Self.FWeight:= FWeight;
+end;
+
+{ TDog }
+
+constructor TDog.Create;
+begin
+  Writeln('狗类');
+  //直接调用父类方法
+  inherited Create(100);
+end;
+
+{ TCat }
+
+constructor TCat.Create;
+begin
+
+end;
+
+end.

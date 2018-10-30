@@ -1,0 +1,42 @@
+program Project1;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+{*------------------------------------------------------------------------------
+
+思想
+
+  面向过程 C
+    强调的是功能行为（方法、函数），c语言就是面向过程语言
+    举例：
+      1.打开冰箱柜门
+      2.把大象放进去
+      3.关上冰箱门
+
+  基于对象
+
+
+  面向对象 C++、Delphi、Java、C#
+    将功能封装进对象
+    举例：
+      定义一个冰箱
+        属性
+        功能 开门、关门
+      大象
+        属性
+        功能：移动
+-------------------------------------------------------------------------------}
+
+begin
+  try
+    { TODO -oUser -cConsole Main : Insert code here }
+  except
+    on E: Exception do
+      Writeln(E.ClassName, ': ', E.Message);
+  end;
+end.

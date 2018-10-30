@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.993,=G:\DelphiWorkspace\2018-10-12-类属性\Demo1\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.223,=G:\DelphiWorkspace\2018-10-12-类属性\Demo1\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.016,G:\DelphiWorkspace\2018-10-12-类属性\Demo1\UTools.pas=G:\DelphiWorkspace\2018-10-12-类属性\Demo1\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.775,G:\DelphiWorkspace\Project1.dproj=G:\DelphiWorkspace\2018-10-12-类属性\Demo1\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

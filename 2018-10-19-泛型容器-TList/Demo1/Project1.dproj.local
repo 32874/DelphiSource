@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.298,=G:\DelphiWorkspace\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.718,=G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit2.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.600,=G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit3.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.773,=G:\DelphiWorkspace\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.794,G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit1.dfm=G:\DelphiWorkspace\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.042,G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\AddForm.pas=G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit3.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.029,G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Project1.dproj=G:\DelphiWorkspace\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.042,G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\AddForm.dfm=G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit3.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.794,G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit1.pas=G:\DelphiWorkspace\Unit1.pas</Transaction>
+    <Transaction>2018-10-22 08:52:50.172,=G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit3.pas</Transaction>
+    <Transaction>2018-10-22 08:53:11.779,G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\DaoUnit.pas=G:\DelphiWorkspace\2018-10-19-泛型容器-TList\Demo1\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

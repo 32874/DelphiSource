@@ -1,0 +1,45 @@
+unit AddForm;
+
+interface
+
+uses
+  System.StrUtils, Unit2, DaoUnit, Winapi.Windows, Winapi.Messages, System.SysUtils,
+  System.Variants, System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmAdd = class(TForm)
+    lbName: TLabel;
+    lbAge: TLabel;
+    edtName: TEdit;
+    edtAge: TEdit;
+    btnSave: TBitBtn;
+    btnCancel: TBitBtn;
+    procedure btnSaveClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmAdd: TfrmAdd;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmAdd.btnSaveClick(Sender: TObject);
+var
+  Student: TStudent;
+  Guid, Id: string;
+begin
+  Guid := TGUID.NewGuid.ToString;
+  Id := Copy(Guid, 2, Length(Guid) - 2);
+  ShowMessage(Id + '/n' + Guid);
+//  Student := TStudent.Create(TGUID.Create.ToString, StrToInt(edtAge.Text), edtName.Text);
+//  TDao.Add(Student);
+end;
+
+end.
+

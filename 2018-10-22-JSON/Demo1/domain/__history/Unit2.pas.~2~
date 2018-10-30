@@ -1,0 +1,14 @@
+unit Unit2;
+
+interface
+
+type
+  TStudent = class
+  private
+    FName: string;
+  end;
+
+implementation
+
+end.
+

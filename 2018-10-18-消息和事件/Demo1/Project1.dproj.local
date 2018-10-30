@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.298,=G:\DelphiWorkspace\Unit1.pas</Transaction>
+    <Transaction>2018-10-18 15:08:12.583,=G:\DelphiWorkspace\Unit1.pas</Transaction>
+    <Transaction>2018-10-18 15:10:59.475,=G:\DelphiWorkspace\Unit2.pas</Transaction>
+    <Transaction>2018-10-18 15:17:19.006,G:\DelphiWorkspace\2018-10-18-消息和事件\Demo1\Unit2.pas=G:\DelphiWorkspace\Unit2.pas</Transaction>
+    <Transaction>2018-10-18 15:17:22.582,G:\DelphiWorkspace\2018-10-18-消息和事件\Demo1\Unit1.dfm=G:\DelphiWorkspace\Unit1.dfm</Transaction>
+    <Transaction>2018-10-18 15:17:22.582,G:\DelphiWorkspace\2018-10-18-消息和事件\Demo1\Unit1.pas=G:\DelphiWorkspace\Unit1.pas</Transaction>
+    <Transaction>2018-10-18 15:17:23.910,G:\DelphiWorkspace\2018-10-18-消息和事件\Demo1\Project1.dproj=G:\DelphiWorkspace\Project1.dproj</Transaction>
+  </Transactions>  <ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="Unit1.pas"/>
+    <File Path="Unit1.dfm"/>
+    <File Path="Unit2.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>

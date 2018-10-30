@@ -1,0 +1,20 @@
+program Project2;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+var
+  i: Integer;
+begin
+  i := 1;
+  case i of
+    1:
+      Writeln('台湾第一美女:萧蔷');
+    2:
+  end;
+
+  Readln;
+end.
