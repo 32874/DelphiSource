@@ -1,3 +1,3 @@
-# DelphiSource
+﻿# DelphiSource
 delphi
-�Ϻ�delphi  ѧϰ��¼
+老侯delphi  学习记录
