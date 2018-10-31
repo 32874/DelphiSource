@@ -1,0 +1,19 @@
+unit uProduct;
+
+interface
+
+uses
+  System.Classes;
+
+type
+  //²úÆ·
+  TProduct = class
+  private
+    { Private declarations }
+  end;
+
+implementation
+
+
+end.
+

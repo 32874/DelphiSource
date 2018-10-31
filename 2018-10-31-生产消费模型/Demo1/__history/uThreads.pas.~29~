@@ -1,0 +1,72 @@
+unit uThreads;
+
+interface
+
+uses
+  System.Classes, System.sysutils, uProduct;
+
+type
+  //生产线程类
+  TManufactureThread = class(TThread)
+  private
+    { Private declarations }
+    FProduct: TProduct;
+  protected
+    procedure Execute; override;
+  public
+    constructor Create; overload;
+    constructor Create(Product: TProduct); overload;
+  end;
+  //消费线程类
+
+  TConsumeThread = class(TThread)
+  private
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  end;
+
+implementation
+
+uses
+  Unit1;
+
+//有参构造
+
+constructor TManufactureThread.Create(Product: TProduct);
+begin
+  inherited Create(False);
+  Self.FProduct := Product;
+end;
+
+//启动生产线程的代码
+procedure TManufactureThread.Execute;
+begin
+  while True do
+  begin
+    System.TMonitor.Enter(Self.FProduct);
+    form1.mmo1.lines.add('线程ID：' + self.threadid.tostring + ',当前的产品编号：' + self.fproduct.id.tostring);
+    Self.Sleep(500);
+    Self.FProduct.Id := Self.FProduct.Id + 1;
+    if Self.FProduct.Id = 10 then
+      Exit;
+    System.TMonitor.Exit(Self.FProduct);
+  end;
+end;
+
+{ TConsumeThread }
+//启动消费线程的代码
+procedure TConsumeThread.Execute;
+begin
+  inherited;
+end;
+
+//空参构造
+constructor TManufactureThread.Create;
+begin
+  //true表示线程创建完成之后挂起，在调用start之后才会继续线程
+  inherited Create(True);
+end;
+
+end.
+

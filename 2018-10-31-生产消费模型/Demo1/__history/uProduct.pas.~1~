@@ -1,0 +1,24 @@
+unit uProduct;
+
+interface
+
+uses
+  System.Classes;
+
+type
+  TProduct = class(TThread)
+  private
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  end;
+
+implementation
+
+procedure TProduct.Execute;
+begin
+  { Place thread code here }
+end;
+
+end.
+

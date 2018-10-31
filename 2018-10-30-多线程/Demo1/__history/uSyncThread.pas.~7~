@@ -1,0 +1,91 @@
+unit uSyncThread;
+
+interface
+
+uses
+  System.Classes, System.SysUtils;
+
+type
+  TWorkingThread = class(TThread)
+  private
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  end;
+
+implementation
+{
+  线程安全
+    1.多个线程共享一块数据，保证该数据执行的结果是正确的
+  解决方案
+    1.线程同步（线程安全）、VCL控件大部分是线程不安全的
+
+    2.Delphi的具体实现方式
+      a)Synchronize
+      b)临界区(TCriticalSection)
+      c)互斥体(Mutex)
+      d)信号量(TEvent)
+      e)(TMonitor)
+
+    3. 使用场景
+      1. 当多个线程访问一个对象(数据)时，为了保证数据的正确性我们需要同步
+      2. 线程同步：可以保证数据的安全性，慢(效率低)
+      3. 线程异步：快(效率高)、无法保证数据的安全性
+
+}
+
+
+{
+  Important: Methods and properties of objects in visual components can only be
+  used in a method called using Synchronize, for example,
+
+      Synchronize(UpdateCaption);
+
+  and UpdateCaption could look like,
+
+    procedure TWorkingThread.UpdateCaption;
+    begin
+      Form1.Caption := 'Updated in a thread';
+    end;
+
+    or
+
+    Synchronize(
+      procedure
+      begin
+        Form1.Caption := 'Updated in thread via an anonymous method'
+      end
+      )
+    );
+
+  where an anonymous method is passed.
+
+  Similarly, the developer can call the Queue method with similar parameters as
+  above, instead passing another TThread class as the first parameter, putting
+  the calling thread in a queue with the other thread.
+
+}
+
+uses
+  MultipleThread;
+{ TWorkingThread }
+
+procedure TWorkingThread.Execute;
+var
+  I: Integer;
+begin
+  { Place thread code here }
+  FreeOnTerminate := True;
+  I := 1;
+  while True do
+  begin
+    Form1.lb3.Caption := I.ToString;
+    if I = 10 then
+      Exit;
+    Inc(I);
+    Self.Sleep(100);
+  end;
+end;
+
+end.
+

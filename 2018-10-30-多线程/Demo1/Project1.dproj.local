@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.562,=G:\DelphiSource\2018-10-30-多线程\Demo1\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.949,=G:\DelphiSource\2018-10-30-多线程\Demo1\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.770,G:\DelphiSource\2018-10-30-多线程\Demo1\Unit1.pas=G:\DelphiSource\2018-10-30-多线程\Demo1\uSyncThread.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.726,G:\DelphiSource\2018-10-30-多线程\Demo1\Unit1.pas=G:\DelphiSource\2018-10-30-多线程\Demo1\uSyncThread.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.112,=G:\DelphiSource\2018-10-30-多线程\Demo1\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.771,G:\DelphiSource\2018-10-30-多线程\Demo1\uThreads.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.670,=G:\DelphiWorkspace\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.946,G:\DelphiWorkspace\Project1.dproj=G:\DelphiSource\2018-10-30-多线程\Demo1\Project1.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.890,G:\DelphiWorkspace\Unit1.pas=G:\DelphiSource\2018-10-30-多线程\Demo1\MultipleThread.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.109,G:\DelphiSource\2018-10-30-多线程\Demo1\uThreads.pas=G:\DelphiSource\2018-10-30-多线程\Demo1\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.890,G:\DelphiWorkspace\Unit1.dfm=G:\DelphiSource\2018-10-30-多线程\Demo1\MultipleThread.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

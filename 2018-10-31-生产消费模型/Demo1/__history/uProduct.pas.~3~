@@ -1,0 +1,22 @@
+unit uProduct;
+
+interface
+
+uses
+  System.Classes;
+
+type
+  //²úÆ·Àà
+  TProduct = class
+  private { Private declarations }
+    FId: Integer; { Private declarations }
+    FName: string;
+    { Private declarations }
+  public
+    property Id: Integer read FId write FId;
+    property Name: string read FName write FName;
+  end;
+
+implementation
+
+end.
